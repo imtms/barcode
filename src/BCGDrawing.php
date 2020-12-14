@@ -181,7 +181,7 @@ class BCGDrawing {
         }
 
         if ($drawer !== null) {
-            $drawer->draw();
+            return $drawer->draw();
         }
     }
 

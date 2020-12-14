@@ -40,7 +40,7 @@ class BCGDrawPNG extends BCGDraw {
         $this->setInternalProperties($bin);
 
         if (empty($this->filename)) {
-            echo $bin;
+            return $bin;
         } else {
             file_put_contents($this->filename, $bin);
         }
